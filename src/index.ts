@@ -7,9 +7,8 @@ import dotenv from 'dotenv';
 dotenv.config(); 
 const app = express();
 
-
 //settings 
-app.set('port', process.env.PORT);
+app.set('puerto', process.env.PORT);
 
 //middlewares
 app.use(cors());
@@ -21,8 +20,8 @@ app.use((req,res)=>{
     res.send("hola mundo");
 });
 
-app.listen(app.get('port'), ()=>{
+app.listen(app.get('puerto'), ()=>{
 
-    console.log("SERVER EN EL PUERTO "+app.get('port'));
+    console.log("SERVER EN EL PUERTO "+app.get('puerto'));
 
 });

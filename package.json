@@ -4,7 +4,7 @@
   "description": "proyecto de seguimiento persona diversidad sexual",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon /dist"
+    "server": "nodemon ./src/index.ts"
   },
   "author": "Hospital Provincial de Ovalle",
   "license": "ISC",
@@ -19,9 +19,6 @@
     "mysql2": "^3.2.0"
   },
   "devDependencies": {
-    "morgan": "^1.10.0",
-    "nodemon": "^2.0.22",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.0.4"
+    "morgan": "^1.10.0"
   }
 }

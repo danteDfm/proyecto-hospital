@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
 import dotenv from 'dotenv';
+import { indexRouter }  from './routes';
 
 //init
 dotenv.config(); 
@@ -15,10 +16,7 @@ app.use(cors());
 app.use(morgan('dev'));
 
 //routes 
-app.use((req,res)=>{
-
-    res.send("hola mundo");
-});
+indexRouter(app);
 
 app.listen(app.get('puerto'), ()=>{
 

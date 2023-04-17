@@ -12,7 +12,7 @@ const app = express();
 app.set('puerto', process.env.PORT);
 
 //middlewares
-app.use(cors());
+app.use(cors());    
 app.use(morgan('dev'));
 
 //routes 

@@ -5,7 +5,7 @@ class ConnectDatabase {
 
     private _objConexion;
     constructor() {
-
+        
         this._objConexion = this.connectDbs();
     }
 
